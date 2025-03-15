@@ -8,7 +8,6 @@ from langchain_core.runnables import RunnableSequence
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.pydantic_v1 import BaseModel, Field, validator
 
-
 os.environ['OPENAI_API_KEY'] = st.secrets['api_key']
 
 # Initialize LLM

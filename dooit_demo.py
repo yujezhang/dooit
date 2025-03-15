@@ -5,25 +5,6 @@ import sys
 import importlib
 import subprocess
 
-
-# @st.cache_resource
-# def install_from_whl(package_name, whl_path):
-#     try:
-#         # Check if the package is already installed
-#         importlib.import_module(package_name)
-#         print(f"'{package_name}' is already installed.")
-#     except ImportError:
-#         # Install from the specified .whl file
-#         if os.path.exists(whl_path):
-#             print(f"Installing '{package_name}' from '{whl_path}'...")
-#             subprocess.check_call([sys.executable, "-m", "pip", "install", "--user", whl_path])
-#             print(f"'{package_name}' installed successfully!")
-#         else:
-#             print(f"Error: The .whl file '{whl_path}' does not exist.")
-
-# install_from_whl("langchain-community", "langchain_community-0.3.17-py3-none-any.whl")
-# install_from_whl("langchain-core", "langchain_core-0.3.35-py3-none-any.whl")
-
 import llm_api as api
 # Sample employee data
 emps = pd.read_csv("data/data3.csv")
